@@ -1,8 +1,13 @@
 function createAccount() {
+  const name =
+    document.getElementById("name").value.trim();
 
-  const name = document.getElementById("name").value;
-  const phone = document.getElementById("phone").value;
-  const password = document.getElementById("password").value;
+  const phone =
+    document.getElementById("phone").value.trim();
+
+  const password =
+    document.getElementById("password").value;
+
   const confirmPassword =
     document.getElementById("confirmPassword").value;
 
@@ -21,15 +26,41 @@ function createAccount() {
     return;
   }
 
-  localStorage.setItem("ymaName", name);
-  localStorage.setItem("ymaPhone", phone);
-  localStorage.setItem("ymaPassword", password);
+  const user = {
+    name: name,
+    phone: phone,
+    password: password
+  };
 
-  alert("Account created successfully!");
+  localStorage.setItem(
+    "ymaUser",
+    JSON.stringify(user)
+  );
 
-  window.location.href = "index.html";
+  localStorage.setItem(
+    "ymaName",
+    name
+  );
+
+  localStorage.setItem(
+    "ymaPhone",
+    phone
+  );
+
+  localStorage.setItem(
+    "ymaPassword",
+    password
+  );
+
+  alert(
+    "Account created successfully! ✅"
+  );
+
+  window.location.href =
+    "index.html";
 }
 
 function goLogin() {
-  window.location.href = "index.html";
+  window.location.href =
+    "index.html";
 }
