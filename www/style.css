@@ -533,3 +533,187 @@ button {
 .dark-mode .profile-row small {
   color: #bbb;
 }
+/* =========================
+   YMA MODERN DASHBOARD
+========================= */
+
+body {
+  background: #f4f7fb;
+  color: #172033;
+}
+
+.dashboard {
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+
+.topbar {
+  background: linear-gradient(
+    135deg,
+    #1976d2,
+    #0d47a1
+  );
+  color: white;
+  padding: 28px 20px;
+  text-align: left;
+  border-radius: 0 0 28px 28px;
+  box-shadow: 0 8px 20px rgba(25, 118, 210, 0.25);
+}
+
+.topbar h1 {
+  font-size: 34px;
+  margin: 0;
+}
+
+.topbar p {
+  opacity: 0.9;
+  margin-top: 6px;
+}
+
+.welcome {
+  padding: 24px 20px 10px;
+}
+
+.welcome h2 {
+  font-size: 24px;
+  margin: 0 0 8px;
+}
+
+.welcome p {
+  color: #667085;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 20px;
+}
+
+.menu-card {
+  background: white;
+  padding: 22px 12px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.2s ease;
+  border: 1px solid #eef1f6;
+}
+
+.menu-card:active {
+  transform: scale(0.94);
+}
+
+.icon {
+  font-size: 44px;
+  margin-bottom: 12px;
+}
+
+.menu-card h3 {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+.menu-card p {
+  font-size: 12px;
+  color: #667085;
+  margin: 6px 0 0;
+}
+
+/* Logout */
+.menu-card:last-child {
+  border: 1px solid #ffcdd2;
+}
+/* YMA LOGO */
+
+.yma-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.logo-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: white;
+  color: #1976d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.yma-logo strong {
+  display: block;
+  font-size: 24px;
+}
+
+.yma-logo small {
+  display: block;
+  opacity: 0.8;
+  margin-top: 3px;
+}
+/* =========================
+   YMA SPLASH SCREEN
+========================= */
+
+#splashScreen {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    #1976d2,
+    #0d47a1
+  );
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: splashFade 2.5s forwards;
+}
+
+.splash-logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 28px;
+  background: white;
+  color: #1976d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 52px;
+  font-weight: bold;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+#splashScreen h1 {
+  font-size: 42px;
+  margin: 18px 0 5px;
+}
+
+#splashScreen p {
+  opacity: 0.85;
+}
+
+@keyframes splashFade {
+  0% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
