@@ -53,11 +53,12 @@ function createAccount() {
   );
 
   alert(
-    "Account created successfully! ✅"
-  );
+  "Account created successfully! ✅"
+);
 
-  window.location.href =
-    "index.html";
+setTimeout(function () {
+  window.location.href = "index.html";
+}, 100);
 }
 
 function goLogin() {
