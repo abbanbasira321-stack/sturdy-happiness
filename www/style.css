@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.wifi {
+  font-size: 80px;
+}
+
+.logo h1 {
+  color: #1976d2;
+  font-size: 40px;
+  margin: 5px 0;
+}
+
+.logo p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form input {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #1976d2;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.create {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.create span {
+  color: #1976d2;
+  font-weight: bold;
+}
