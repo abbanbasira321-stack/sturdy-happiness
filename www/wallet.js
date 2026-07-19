@@ -1,13 +1,24 @@
-let balance =
-  Number(
-    localStorage.getItem("ymaBalance")
-  ) || 0;
+function getBalance() {
+  return Number(
+    localStorage.getItem("ymaBalance") || 0
+  );
+}
+
+function saveBalance(balance) {
+  localStorage.setItem(
+    "ymaBalance",
+    balance.toString()
+  );
+}
 
 function updateBalance() {
-  document.getElementById(
-    "balance"
-  ).textContent =
-    "₦" + balance.toFixed(2);
+  const balanceElement =
+    document.getElementById("balance");
+
+  if (balanceElement) {
+    balanceElement.textContent =
+      "₦" + getBalance().toFixed(2);
+  }
 }
 
 function topUp() {
@@ -23,8 +34,7 @@ function topUp() {
     return;
   }
 
-  const value =
-    Number(amount);
+  const value = Number(amount);
 
   if (
     isNaN(value) ||
@@ -33,17 +43,13 @@ function topUp() {
     alert(
       "Da fatan zaɓi adadi mai inganci."
     );
-
     return;
   }
 
-  balance += value;
+  const newBalance =
+    getBalance() + value;
 
-  localStorage.setItem(
-    "ymaBalance",
-    balance
-  );
-
+  saveBalance(newBalance);
   updateBalance();
 
   alert(
@@ -58,5 +64,50 @@ function goBack() {
     "dashboard.html";
 }
 
-window.onload =
-  updateBalance;
+window.onload = function () {
+  updateBalance();
+  loadPaymentHistory();
+};
+function loadPaymentHistory() {
+  const history =
+    JSON.parse(
+      localStorage.getItem("ymaPayments")
+    ) || [];
+
+  const historyBox =
+    document.getElementById(
+      "paymentHistory"
+    );
+
+  if (!historyBox) {
+    return;
+  }
+
+  if (history.length === 0) {
+    historyBox.innerHTML = `
+      <div class="history-icon">📋</div>
+
+      <div>
+        <strong>No Payment History</strong>
+        <p>Your payments will appear here.</p>
+      </div>
+    `;
+
+    return;
+  }
+
+  historyBox.innerHTML =
+    history
+      .slice()
+      .reverse()
+      .map(function (payment) {
+        return `
+          <div class="payment-item">
+            <strong>${payment.plan}</strong>
+            <p>₦${payment.amount}</p>
+            <small>${payment.date}</small>
+          </div>
+        `;
+      })
+      .join("");
+}
