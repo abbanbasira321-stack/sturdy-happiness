@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Plans - YMA Admin</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="admin-page">
+
+    <header class="admin-topbar">
+
+      <h1>💳 Wi-Fi Plans</h1>
+
+      <p>Manage YMA Internet Plans</p>
+
+    </header>
+
+    <div class="admin-card">
+
+      <h2>Add New Plan</h2>
+
+      <input
+        type="text"
+        id="planName"
+        placeholder="Plan Name"
+      >
+
+      <input
+        type="number"
+        id="planPrice"
+        placeholder="Price (₦)"
+      >
+
+      <input
+        type="text"
+        id="planDuration"
+        placeholder="Duration e.g. 30 Days"
+      >
+
+      <button onclick="addPlan()">
+        ➕ ADD PLAN
+      </button>
+
+    </div>
+
+    <h2 class="admin-title">
+      Current Plans
+    </h2>
+
+    <div
+      id="plansList"
+      class="plans-list"
+    ></div>
+
+    <button
+      class="back-button"
+      onclick="goAdmin()"
+    >
+      ← Back to Admin
+    </button>
+
+  </div>
+
+  <script src="admin-plans.js"></script>
+
+</body>
+
+</html>

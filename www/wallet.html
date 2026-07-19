@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Wallet - YMA</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="wallet-page">
+
+    <div class="wallet-header">
+      <div class="wallet-icon">💰</div>
+
+      <h1>My Wallet</h1>
+
+      <p>Manage your YMA balance</p>
+    </div>
+
+    <div class="balance-card">
+
+      <p>Available Balance</p>
+
+      <h2 id="balance">₦0.00</h2>
+
+    </div>
+
+    <button
+      class="topup-button"
+      onclick="topUp()"
+    >
+      💳 TOP UP WALLET
+    </button>
+
+    <h2 class="history-title">
+      Payment History
+    </h2>
+
+    <div class="history-card">
+
+      <div class="history-icon">📋</div>
+
+      <div>
+        <strong>No Payment History</strong>
+
+        <p>Your payments will appear here.</p>
+      </div>
+
+    </div>
+
+    <button
+      class="back-button"
+      onclick="goBack()"
+    >
+      ← Back to Dashboard
+    </button>
+
+  </div>
+
+  <script src="wallet.js"></script>
+
+</body>
+</html>

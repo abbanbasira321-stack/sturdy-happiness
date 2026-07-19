@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Wi-Fi Plans - YMA</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="plans-page">
+
+    <div class="plans-header">
+
+      <div class="plans-icon">💳</div>
+
+      <h1>Wi-Fi Plans</h1>
+
+      <p>Choose a plan that suits you</p>
+
+    </div>
+
+    <div class="plan-card">
+
+      <div class="plan-icon">📅</div>
+
+      <h2>Daily Plan</h2>
+
+      <p>24 Hours Unlimited Wi-Fi</p>
+
+      <h3>₦100</h3>
+
+      <button onclick="buyPlan('Daily Plan', 100)">
+        BUY NOW
+      </button>
+
+    </div>
+
+    <div class="plan-card">
+
+      <div class="plan-icon">📆</div>
+
+      <h2>Weekly Plan</h2>
+
+      <p>7 Days Unlimited Wi-Fi</p>
+
+      <h3>₦500</h3>
+
+      <button onclick="buyPlan('Weekly Plan', 500)">
+        BUY NOW
+      </button>
+
+    </div>
+
+    <div class="plan-card">
+
+      <div class="plan-icon">🗓️</div>
+
+      <h2>Monthly Plan</h2>
+
+      <p>30 Days Unlimited Wi-Fi</p>
+
+      <h3>₦1,500</h3>
+
+      <button onclick="buyPlan('Monthly Plan', 1500)">
+        BUY NOW
+      </button>
+
+    </div>
+
+    <button
+      class="back-button"
+      onclick="goBack()"
+    >
+      ← Back to Dashboard
+    </button>
+
+  </div>
+
+  <script src="plans.js"></script>
+
+</body>
+
+</html>

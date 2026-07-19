@@ -66,3 +66,470 @@ button {
   color: #1976d2;
   font-weight: bold;
 }
+.topbar {
+  background: #1976d2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.topbar p {
+  margin: 5px 0 0;
+}
+
+.welcome {
+  padding: 20px;
+}
+
+.welcome h2 {
+  margin-bottom: 5px;
+}
+
+.welcome p {
+  color: #666;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 16px;
+}
+
+.menu-card {
+  background: white;
+  padding: 20px 10px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.menu-card:active {
+  transform: scale(0.96);
+}
+
+.icon {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.menu-card h3 {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.menu-card p {
+  font-size: 12px;
+  color: #666;
+}
+.wifi-page {
+  min-height: 100vh;
+  padding: 25px 16px;
+  background: #f5f7fb;
+}
+
+.wifi-header {
+  text-align: center;
+  padding: 25px 10px;
+}
+
+.wifi-icon {
+  font-size: 75px;
+}
+
+.wifi-header h1 {
+  color: #1976d2;
+  margin: 10px 0 5px;
+}
+
+.wifi-header p {
+  color: #666;
+}
+
+.wifi-card {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.status-dot {
+  width: 18px;
+  height: 18px;
+  background: #f44336;
+  border-radius: 50%;
+}
+
+.status strong {
+  font-size: 20px;
+}
+
+.status p {
+  margin: 5px 0 0;
+  color: #777;
+}
+
+.wifi-card button {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  background: #1976d2;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.info div {
+  background: #f5f7fb;
+  padding: 15px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.info span {
+  font-size: 28px;
+}
+
+.info p {
+  font-size: 12px;
+  color: #777;
+}
+
+.back-button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: transparent;
+  color: #1976d2;
+  font-size: 16px;
+}
+.wallet-page {
+  min-height: 100vh;
+  padding: 25px 16px;
+  background: #f5f7fb;
+}
+
+.wallet-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.wallet-icon {
+  font-size: 70px;
+}
+
+.wallet-header h1 {
+  color: #1976d2;
+  margin: 10px 0 5px;
+}
+
+.wallet-header p {
+  color: #666;
+}
+
+.balance-card {
+  background: #1976d2;
+  color: white;
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.balance-card p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.balance-card h2 {
+  font-size: 35px;
+  margin: 15px 0 0;
+}
+
+.topup-button {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  background: #1976d2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.history-title {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.history-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.history-icon {
+  font-size: 35px;
+}
+
+.history-card p {
+  color: #777;
+  font-size: 13px;
+}
+.plans-page {
+  min-height: 100vh;
+  padding: 25px 16px;
+  background: #f5f7fb;
+}
+
+.plans-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.plans-icon {
+  font-size: 65px;
+}
+
+.plans-header h1 {
+  color: #1976d2;
+  margin: 10px 0 5px;
+}
+
+.plans-header p {
+  color: #666;
+}
+
+.plan-card {
+  background: white;
+  padding: 22px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.plan-icon {
+  font-size: 45px;
+}
+
+.plan-card h2 {
+  margin: 10px 0;
+}
+
+.plan-card p {
+  color: #777;
+}
+
+.plan-card h3 {
+  color: #1976d2;
+  font-size: 28px;
+}
+
+.plan-card button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 9px;
+  background: #1976d2;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+.profile-page {
+  min-height: 100vh;
+  padding: 25px 16px;
+  background: #f5f7fb;
+}
+
+.profile-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-icon {
+  font-size: 70px;
+}
+
+.profile-header h1 {
+  color: #1976d2;
+  margin: 10px 0 5px;
+}
+
+.profile-header p {
+  color: #666;
+}
+
+.profile-card {
+  background: white;
+  padding: 10px 20px;
+  border-radius: 18px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+.profile-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.profile-row:last-child {
+  border-bottom: none;
+}
+
+.profile-row > span {
+  font-size: 30px;
+}
+
+.profile-row small {
+  display: block;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.profile-row strong {
+  font-size: 16px;
+}
+
+.settings-page {
+  min-height: 100vh;
+  padding: 25px 16px;
+  background: #f5f7fb;
+}
+
+.settings-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.settings-icon {
+  font-size: 70px;
+}
+
+.settings-header h1 {
+  color: #1976d2;
+  margin: 10px 0 5px;
+}
+
+.settings-header p {
+  color: #666;
+}
+
+.settings-card {
+  background: white;
+  padding: 10px 20px;
+  border-radius: 18px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+.setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.setting-row p {
+  margin: 5px 0 0;
+  color: #777;
+  font-size: 13px;
+}
+
+.change-password-button {
+  width: 100%;
+  padding: 15px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  background: #1976d2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.switch {
+  position: relative;
+  width: 50px;
+  height: 28px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background: #ccc;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 3px;
+  top: 3px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.switch input:checked + .slider {
+  background: #1976d2;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+.dark-mode {
+  background: #121212 !important;
+  color: white;
+}
+
+.dark-mode .settings-card,
+.dark-mode .profile-card {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark-mode .setting-row {
+  border-bottom-color: #444;
+}
+
+.dark-mode .setting-row p,
+.dark-mode .profile-row small {
+  color: #bbb;
+}

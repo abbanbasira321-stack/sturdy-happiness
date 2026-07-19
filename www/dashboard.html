@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>YMA Dashboard</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="dashboard">
+
+    <header class="topbar">
+      <h1>YMA</h1>
+      <p>Unlimited Wi-Fi</p>
+    </header>
+
+    <div class="welcome">
+      <h2>Welcome to YMA 👋</h2>
+      <p>Manage your Wi-Fi account</p>
+    </div>
+
+    <div class="grid">
+
+      <div
+        class="menu-card"
+        onclick="window.location.href='connect-wifi.html'"
+      >
+        <div class="icon">📶</div>
+        <h3>Connect Wi-Fi</h3>
+        <p>Connect to YMA Network</p>
+      </div>
+
+      <div
+        class="menu-card"
+        onclick="window.location.href='wallet.html'"
+      >
+        <div class="icon">💰</div>
+        <h3>Wallet</h3>
+        <p>Balance: ₦0.00</p>
+      </div>
+
+      <div
+        class="menu-card"
+        onclick="window.location.href='plans.html'"
+      >
+        <div class="icon">💳</div>
+        <h3>Buy Plan</h3>
+        <p>Choose your internet plan</p>
+      </div>
+
+      <div
+        class="menu-card"
+        onclick="profile()"
+      >
+     <div class="menu-card" onclick="window.location.href='profile.html'">
+  <div class="icon">👤</div>
+  <h3>Profile</h3>
+  <p>Manage your account</p>
+</div>
+
+    <div class="menu-card" onclick="window.location.href='settings.html'">
+        <div class="icon">⚙️</div>
+        <h3>Settings</h3>
+        <p>App settings</p>
+      </div>
+
+      <div
+        class="menu-card"
+        onclick="logout()"
+      >
+        <div class="icon">🚪</div>
+        <h3>Logout</h3>
+        <p>Exit your account</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="dashboard.js"></script>
+
+</body>
+
+</html>

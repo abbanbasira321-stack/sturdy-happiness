@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Admin Login - YMA</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <div class="logo">
+
+      <div class="wifi">👑</div>
+
+      <h1>YMA ADMIN</h1>
+
+      <p>Admin Control Panel</p>
+
+    </div>
+
+    <div class="form">
+
+      <input
+        type="text"
+        id="adminPhone"
+        placeholder="Admin Phone Number"
+      >
+
+      <input
+        type="password"
+        id="adminPassword"
+        placeholder="Admin Password"
+      >
+
+      <button onclick="adminLogin()">
+        ADMIN LOGIN
+      </button>
+
+      <p class="create">
+        <span onclick="goUserLogin()">
+          ← User Login
+        </span>
+      </p>
+
+    </div>
+
+  </div>
+
+  <script src="admin-login.js"></script>
+
+</body>
+
+</html>

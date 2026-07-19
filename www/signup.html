@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Create Account - YMA</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <div class="logo">
+      <div class="wifi">📶</div>
+      <h1>YMA</h1>
+      <p>Create Account</p>
+    </div>
+
+    <div class="form">
+
+      <input
+        type="text"
+        id="name"
+        placeholder="Full Name"
+      >
+
+      <input
+        type="tel"
+        id="phone"
+        placeholder="Phone Number"
+      >
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Create Password"
+      >
+
+      <input
+        type="password"
+        id="confirmPassword"
+        placeholder="Confirm Password"
+      >
+
+      <button onclick="createAccount()">
+        CREATE ACCOUNT
+      </button>
+
+      <p class="create">
+        Already have an account?
+        <span onclick="goLogin()">Login</span>
+      </p>
+
+    </div>
+
+  </div>
+
+  <script src="signup.js"></script>
+
+</body>
+
+</html>

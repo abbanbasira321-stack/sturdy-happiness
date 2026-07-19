@@ -1,5 +1,5 @@
 function login() {
-  const phone = document.getElementById("phone").value;
+  const phone = document.getElementById("phone").value.trim();
   const password = document.getElementById("password").value;
 
   if (phone === "" || password === "") {
@@ -7,9 +7,22 @@ function login() {
     return;
   }
 
-  alert("Login successful!");
+  const user = JSON.parse(localStorage.getItem("ymaUser"));
+
+  if (!user) {
+    alert("Babu account. Da farko ka danna Create Account.");
+    return;
+  }
+
+  if (phone !== user.phone || password !== user.password) {
+    alert("Phone number ko password ba daidai ba ne.");
+    return;
+  }
+
+  localStorage.setItem("ymaLoggedIn", "true");
+  window.location.href = "dashboard.html";
 }
 
 function signup() {
-  alert("Create Account page zai zo nan gaba.");
+  window.location.href = "signup.html";
 }
