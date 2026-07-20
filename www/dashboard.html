@@ -15,21 +15,24 @@
   <div class="dashboard">
 
     <header class="topbar">
-      <h1>YMA</h1>
-      <p>Unlimited Wi-Fi</p>
-    </header><div class="yma-logo">
-  <div class="logo-circle">Y</div>
 
-  <div>
-    <strong>YMA</strong>
-    <small>Connect. Enjoy. Grow.</small>
-  </div>
-</div>
-  Welcome,
-  <span id="userName">YMA User</span> 👋
-</h1>
+      <div class="yma-logo">
+        <div class="logo-circle">Y</div>
+
+        <div>
+          <strong>YMA</strong>
+          <small>Connect. Enjoy. Grow.</small>
+        </div>
+      </div>
+
+      <h1>
+        Welcome,
+        <span id="userName">YMA User</span> 👋
+      </h1>
+
       <p>Manage your Wi-Fi account</p>
-    </div>
+
+    </header>
 
     <div class="grid">
 
@@ -60,17 +63,31 @@
         <p>Choose your internet plan</p>
       </div>
 
+    <div
+  class="menu-card"
+  id="activePlanCard"
+  onclick="window.location.href='connect-wifi.html'"
+>
+        <div class="icon">📶</div>
+        <h3>Active Plan</h3>
+        <p id="dashboardActivePlan">
+          No Active Plan
+        </p>
+      </div>
+
       <div
         class="menu-card"
-        onclick="profile()"
+        onclick="window.location.href='profile.html'"
       >
-     <div class="menu-card" onclick="window.location.href='profile.html'">
-  <div class="icon">👤</div>
-  <h3>Profile</h3>
-  <p>Manage your account</p>
-</div>
+        <div class="icon">👤</div>
+        <h3>Profile</h3>
+        <p>Manage your account</p>
+      </div>
 
-    <div class="menu-card" onclick="window.location.href='settings.html'">
+      <div
+        class="menu-card"
+        onclick="window.location.href='settings.html'"
+      >
         <div class="icon">⚙️</div>
         <h3>Settings</h3>
         <p>App settings</p>
@@ -88,29 +105,43 @@
     </div>
 
   </div>
-<nav class="bottom-nav">
 
-  <a href="dashboard.html" class="nav-item active">
-    <span>🏠</span>
-    <small>Home</small>
-  </a>
+  <nav class="bottom-nav">
 
-  <a href="plans.html" class="nav-item">
-    <span>💳</span>
-    <small>Plans</small>
-  </a>
+    <a
+      href="dashboard.html"
+      class="nav-item active"
+    >
+      <span>🏠</span>
+      <small>Home</small>
+    </a>
 
-  <a href="wallet.html" class="nav-item">
-    <span>💰</span>
-    <small>Wallet</small>
-  </a>
+    <a
+      href="plans.html"
+      class="nav-item"
+    >
+      <span>💳</span>
+      <small>Plans</small>
+    </a>
 
-  <a href="profile.html" class="nav-item">
-    <span>👤</span>
-    <small>Profile</small>
-  </a>
+    <a
+      href="wallet.html"
+      class="nav-item"
+    >
+      <span>💰</span>
+      <small>Wallet</small>
+    </a>
 
-</nav>
+    <a
+      href="profile.html"
+      class="nav-item"
+    >
+      <span>👤</span>
+      <small>Profile</small>
+    </a>
+
+  </nav>
+
   <script src="dashboard.js"></script>
 
 </body>
